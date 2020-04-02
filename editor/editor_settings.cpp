@@ -545,6 +545,8 @@ void EditorSettings::_load_defaults(Ref<ConfigFile> p_extra_config) {
 	// 3D: Navigation feel
 	_initial_set("editors/3d/navigation_feel/orbit_sensitivity", 0.4);
 	hints["editors/3d/navigation_feel/orbit_sensitivity"] = PropertyInfo(Variant::FLOAT, "editors/3d/navigation_feel/orbit_sensitivity", PROPERTY_HINT_RANGE, "0.0, 2, 0.01");
+	_initial_set("editors/3d/navigation_feel/freelook_sensitivity", 0.4);
+	hints["editors/3d/navigation_feel/freelook_sensitivity"] = PropertyInfo(Variant::FLOAT, "editors/3d/navigation_feel/freelook_sensitivity", PROPERTY_HINT_RANGE, "0.0, 2, 0.01");
 	_initial_set("editors/3d/navigation_feel/orbit_inertia", 0.05);
 	hints["editors/3d/navigation_feel/orbit_inertia"] = PropertyInfo(Variant::FLOAT, "editors/3d/navigation_feel/orbit_inertia", PROPERTY_HINT_RANGE, "0.0, 1, 0.01");
 	_initial_set("editors/3d/navigation_feel/translation_inertia", 0.15);
